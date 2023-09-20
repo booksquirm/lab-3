@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Zeyada&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inclusive Sans', sans-serif;
+    margin: 0;
+  }
+  
+  header {
+    background-color: #684551;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: white;
+    font-family: 'Zeyada', cursive;
+    font-size: 50px;
+    text-align: center;
+    margin: auto;
+  }
+  
+  nav {
+    text-align: right;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #D5B0AC;
+    margin-right: 10px;
+  }
+
+  nav a:hover {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  ul a {
+    color:#684551;
+  }
+
+  ul a:hover {
+    color:#D5B0AC;
+  }
+
+  article a {
+    color:#684551;
+  }
+
+  article a:hover {
+    color:#D5B0AC;
+  }
+
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-family: 'Zeyada', cursive;
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  article {
+    float: left;
+    width: 40%;
+    margin-right: 10%;
+  }
+  
+  article img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    
+  }
+  
+  article h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  article p {
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background-color: #ccc;
+    padding: 5px;
+  }
