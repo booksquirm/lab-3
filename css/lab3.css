@@ -8,16 +8,21 @@ body {
     font-family: 'Inclusive Sans', sans-serif;
     margin: 0;
   }
-  
+
   header {
     background-color: #684551;
-    padding: 20px;
+    padding: 10px;
   }
   
+#location {
+  color: #ffffff;
+  font-size: 12px;
+}
+
   h1 {
     color: white;
     font-family: 'Zeyada', cursive;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     margin: auto;
   }
@@ -35,6 +40,11 @@ body {
   nav a:hover {
     text-decoration: none;
     color: #ffffff;
+  }
+
+  .featured-posts {
+    display: flex;
+    flex-direction: column;
   }
 
   ul a {
@@ -56,14 +66,14 @@ body {
   main {
     padding: 20px;
   }
-  
+
   section {
     margin-bottom: 20px;
   }
   
   h2 {
     font-family: 'Zeyada', cursive;
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 10px;
   }
   
@@ -75,8 +85,8 @@ body {
   
   article img {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     
   }
   
@@ -88,8 +98,70 @@ body {
   article p {
     margin-bottom: 10px;
   }
+
+  #animated {
+    transform: scale(1);
+    transition: transform 1s ease-in-out;
+  }
+
+  button {
+    background-color:#684551;
+    border: 1px solid #684551;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Inclusive Sans', sans-serif;
+    padding: 5px 15px;
+    transition: all 0.4s ease-in-out;
+  }
   
+  button:hover {
+    background-color: #D5B0AC;
+    border-color: #D5B0AC;
+  }
+  
+  #myElement {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    opacity: 0;
+  }
+
+  #myElement img {
+    width: 70px;
+    height: 70px;
+  }
+
   footer {
     background-color: #ccc;
     padding: 5px;
+  }
+
+  @media screen and (min-width: 700px) {
+    
+    #location {
+      font-size: 15px;
+    }
+
+    .featured-posts {
+      display: flex;
+      flex-direction: row;
+    }
+
+    body {
+    font-size: 18px;
+      }
+
+    h1 {
+        font-size: 70px;
+      }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    article img {
+      width: 300px;
+      height: 300px;
+    }
   }

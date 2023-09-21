@@ -5,30 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 3</title>
     <link href="css/lab3.css" type="text/css" rel="stylesheet">
-    <script src="javascript/lab3.js"></script>
+    
 </head>
 
 <body>
     <header>
         <h1>Jen's Home Decor Blog</h1>
           <nav>
-            <a href="#">home</a>
-            <a href="#">about</a>
-            <a href="#">contact</a>
+            <a href="">home</a>
+            <a href="">about</a>
+            <a href="">contact</a>
           </nav>
+          <div>
+            <p id="location">Mouse Position Tracker</p>
+          </div>
     </header>
 
     <main>
+      
+      <button id="myButton">add some sparkle</button>
+      <div id="myElement">
+        <img src="images/glitter.png" alt="A star.">
+      </div>
+
+      <h2>Featured Posts</h2>
         <section class="featured-posts">
-            <h2>Featured Posts</h2>
             <article>
-              <h3><a href="#">How to Create a Cozy Living Room</a></h3>
-              <img src="images/livingroom.jpg" alt="Cozy living room">
+              <h3><a href="">How to Create a Cozy Living Room</a></h3>
+              <img src="images/livingroom.jpeg" alt="Cozy living room">
               <p>Looking for ways to make your living room more cozy? Here are a few tips! Costal grandma is so in right now.</p>
             </article>
 
             <article>
-              <h3><a href="#">Ideas for Halloween Decorations in 2023</a></h3>
+              <h3><a href="">Ideas for Halloween Decorations in 2023</a></h3>
               <img src="images/halloween.jpg" alt="Halloween Decor">
               <p>Looking for some modern and classy halloween decorations? Look no further! Here are a few projects that you can do in an afternoon if you have an unlimited amount of money or a cousin that works at pottery barn.</p>
 
@@ -36,12 +45,19 @@
           <section class="recent-posts">
             <h2>Recent Posts</h2>
             <ul>
-              <li><a href="#">How to Choose the Right Rug for Your Living Room</a></li>
-              <li><a href="#">5 Tips for Decorating on a Budget</a></li>
-              <li><a href="#">How to Create a Home Office You Love</a></li>
+              <li><a href="">How to Choose the Right Rug for Your Living Room</a></li>
+              <li><a href="">5 Tips for Decorating on a Budget</a></li>
+              <li><a href="">How to Create a Home Office You Love</a></li>
+              <li><a href="">Designing a Small Space Sans IKEA</a></li>
             </ul>
           </section>
-        </main>
+
+          <div id="animated">
+            <img src="images/house.jpg" alt="A drawing of a house.">
+          </div>
+          <button id="click-me">click me</button>
+
+          <script src="js/lab3.js"></script>
 
         <footer>
           <p>This fictitious website was created as an academic exercise for the Diablo Valley College course, ARTDM-174. In no way should this content be considered or used as a source of factual public information.</p>
