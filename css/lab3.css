@@ -11,9 +11,14 @@ body {
 
   header {
     background-color: #684551;
-    padding: 20px;
+    padding: 10px;
   }
   
+#location {
+  color: #ffffff;
+  font-size: 12px;
+}
+
   h1 {
     color: white;
     font-family: 'Zeyada', cursive;
@@ -117,18 +122,14 @@ body {
   
   #myElement {
     position: absolute;
-    top: 100px;
-    left: 100px;
+    top: 10px;
+    left: 20px;
     opacity: 0;
   }
 
   #myElement img {
     width: 70px;
     height: 70px;
-  }
-  
-  #myButton {
-    position: relative;
   }
 
   footer {
@@ -137,6 +138,11 @@ body {
   }
 
   @media screen and (min-width: 700px) {
+    
+    #location {
+      font-size: 15px;
+    }
+
     .featured-posts {
       display: flex;
       flex-direction: row;
