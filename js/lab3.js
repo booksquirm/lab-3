@@ -1,13 +1,13 @@
 const getMouseButton = code => {
     let button = "unknown";
     switch (code) {
-      case 0: // 0 is the code for the left mouse button
+      case 0:
         button = "left";
         break;
-      case 1: // 1 is the code for the middle mouse button
+      case 1:
         button = "middle";
         break;
-      case 2: // 2 is the code for the right button
+      case 2:
         button = "right";
         break;
     }
@@ -21,24 +21,32 @@ const mouseInfo = e => {
 
 document.addEventListener("click", mouseInfo);
 
-const showMessage = (e) => {
-    alert(mouse_location(e));
-};
-  
-window.onload=function(){
-    const buttonElement = document.getElementById("myButton");
-    buttonElement.addEventListener("click", showMessage);
-}
-
-const mouse_location = e => {
-    return [e.clientX, e.clientY]
-}
 
 const locationElement = document.getElementById("location");
 
+
 window.addEventListener("mousemove", function(event) {
-  // Get the mouse position
   const mouseX = event.clientX;
   const mouseY = event.clientY;
   locationElement.textContent = `Mouse position: X: ${mouseX}, Y: ${mouseY}`;
 });
+
+const elementToAnimate = document.querySelector('#animated');
+const clickMeButton = document.querySelector('#click-me');
+
+clickMeButton.addEventListener('click', () => {
+  elementToAnimate.style.transform = 'scale(1.1)';
+
+  setTimeout(() => {
+    elementToAnimate.style.transform = 'scale(1)';
+  }, 1000);
+});
+
+const myButton = document.querySelector("#myButton");
+const myElement = document.querySelector("#myElement");
+
+myButton.addEventListener("click", () => {
+  myElement.style.opacity = 1;
+  myElement.classList.add("animate");
+});
+
