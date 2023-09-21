@@ -129,6 +129,7 @@ body {
   
   #myButton {
     position: relative;
+  }
 
   footer {
     background-color: #ccc;
@@ -153,8 +154,8 @@ body {
         font-size: 45px;
     }
 
-      article img {
-        width: 300px;
-        height: 300px;
-      }
+    article img {
+      width: 300px;
+      height: 300px;
+    }
   }
