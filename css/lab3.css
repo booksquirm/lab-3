@@ -8,7 +8,7 @@ body {
     font-family: 'Inclusive Sans', sans-serif;
     margin: 0;
   }
-  
+
   header {
     background-color: #684551;
     padding: 20px;
@@ -17,7 +17,7 @@ body {
   h1 {
     color: white;
     font-family: 'Zeyada', cursive;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     margin: auto;
   }
@@ -35,6 +35,11 @@ body {
   nav a:hover {
     text-decoration: none;
     color: #ffffff;
+  }
+
+  .featured-posts {
+    display: flex;
+    flex-direction: column;
   }
 
   ul a {
@@ -56,6 +61,8 @@ body {
   main {
     padding: 20px;
   }
+
+
   
   section {
     margin-bottom: 20px;
@@ -63,7 +70,7 @@ body {
   
   h2 {
     font-family: 'Zeyada', cursive;
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 10px;
   }
   
@@ -75,8 +82,8 @@ body {
   
   article img {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     
   }
   
@@ -93,3 +100,29 @@ body {
     background-color: #ccc;
     padding: 5px;
   }
+
+  @media screen and (min-width: 900px) {
+    .featured-posts {
+      display: flex;
+      flex-direction: row;
+    }
+
+    body {
+    font-size: 18px;
+      }
+
+    h1 {
+        font-size: 70px;
+      }
+
+    h2 {
+        font-size: 45px;
+    }
+
+      article img {
+        width: 300px;
+        height: 300px;
+        
+      }
+
+}
